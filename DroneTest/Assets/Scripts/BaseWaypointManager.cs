@@ -19,6 +19,11 @@ public class BaseWaypointManager : MonoBehaviour
         }
     }
 
+    public void ClearAvailability()
+    {
+        InitializeWaypoints();
+    }
+
     public Transform ReserveWaypoint()
     {
         foreach (var waypoint in waypoints)

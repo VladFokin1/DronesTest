@@ -107,6 +107,12 @@ public class GameManager : MonoBehaviour
         greenDrones.Clear();
     }
 
+    private void ClearWaypointsAvailability()
+    {
+        redBaseWaypoints.ClearAvailability();
+        greenBaseWaypoints.ClearAvailability();
+    }
+
     private void UpdateAllDronesSpeed()
     {
         foreach (var drone in redDrones) drone.Agent.speed = droneSpeed;
